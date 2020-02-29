@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Validasi - Arkadeny</title>
+</head>
+<body>
+
+<script>
+	function Username(username) {
+		var Regex = /^[x][A-Z!a-z]{3,15}[x]$/i ;
+		return Regex.test(username) ;
+	}
+	
+	if (Username("xtreidoox")) {
+		alert("Username >> True") ;
+	} else {
+		alert("Username >> False") ;
+	}
+</script>
+</body>
+</html>

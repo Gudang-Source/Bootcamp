@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="robots" content="nofollow">
+    <meta name="googlebot" content="noindex">
+      <title>Validasi</title>
+      <meta name="theme-color" content="#5D4037">
+      <meta name="Description" content="Soal nomor 2 Cek password dengan huruf kecil, sebuah huruf besar, sebuah angka dan sebuah karakter spesial">
+        <meta name="Keyword" content="Cek Password | Arkademy | Soal nomor 2">
+        
+  </head>
+<body>
+    <section class="login-form-wrap">
+        <h1>Cek Username dan Password</h1>
+        <br>
+        <form class="login-form" action="#">
+            <label>
+            <input type="username" name="username" id="username" required placeholder="Masukkan Username Anda">
+            <br><br>
+            <input type="password" name="password" id="password" required placeholder="Masukkan Password Anda">
+            <input type="button" onclick="validatePassword()" value="Cek"><br><br>
+            <input type="checkbox" onclick="showPassword()">Show Password
+            
+            </label><br><br>
+            <div class="keterangan">Keterangan : 
+                    <br>- Username harus diawali sebuah huruf kecil, tidak boleh ada huruf besar, tidak boleh sebuah karakter spesial kecuali  "." dan "_".
+
+                    <br>- Password harus 9 alphanumeric dengan kombinasi minimal 1 simbol dan 1 angka.
+            </div>
+        </form>
+        <h3><a href="#">Treido Going To Arkademy</a></h3>
+    </section>
+</body>
+<script type="text/javascript">
+
+function validatePassword() {
+    var myPassword = document.getElementById('password').value;
+    var regex  = /^(?=.*[0-9])(?=.*[!@#\$%\^\&*\)\(+=._-]).+$/;
+    console.log(myPassword);
+    if(myPassword.length ==9){
+        alert("passwordmu kurang dari 9 karakter"); 
+        return false;
+    }else if(!regex.test(myPassword)) {
+        alert("Password harus 9 alphanumeric dengan kombinasi minimal 1 simbol dan 1 angka.");
+        return false;
+    }else{
+        alert("passwordmu valid");
+    }
+
+    var myUsername = document.getElementById('username').value;
+    var regex  = /^(?=.*[a-z])(?=.*[+=._]).+$/;
+    console.log(myUsername);
+    if(myUsername.length <=12){
+        alert("Usernamemu kurang dari 12 karakter"); 
+        return false;
+    }else if(!regex.test(myPassword)) {
+        alert("Username harus diawali sebuah huruf kecil, tidak boleh ada huruf besar, tidak boleh sebuah karakter spesial kecuali  "." dan "_".");
+        return false;
+    }else{
+        alert("Usernamemu valid");
+    }
+}
+function showPassword() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+</html>

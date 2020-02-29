@@ -1,0 +1,38 @@
+Penambahan dan perbaikan Fitur pada versi 4.3 - 20 Januari 2019 :
+1. Master Kelompok Mapel
+2. Penilaian Diri Siswa
+3. Penilaian Teman Siswa perkelas
+4. PSB ONline
+   - Data Menu
+   - Data Halaman 
+   - Kode Aktivasi
+   - Data Pendaftar
+5. Perbaikan BUG absensi siswa
+6. Penambahan Catatan Wali Kelas
+7. Penambahan Catatan Keuangan
+8. Penambahan Ranking siswa
+9. Penambahan Form Pengumuman siswa dan guru 
+10.Perbaikan Bug Journal KBM
+
+Info Login Admin
+=======================
+Username : admin
+Password : admin123
+
+Info Login siswa 
+=======================
+Username : siswa1
+Password : siswa1
+
+Info Login Guru 
+=======================
+Username : guru4	
+Password : guru4
+
+=======================
+Kalau ada Kedala silahkan hubungi kontak di bawah untuk konsultasi :
+
+WA 	: 0822-8795-0464
+
+
+=======================

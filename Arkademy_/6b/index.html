@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Treido Alde Ristivan</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar navbar-light bg-light">
+                <a class="navbar-brand " href="#">
+                    <img src="img/logo.png" width="125" height="40" class="d-inline-block align-top" >
+                        
+                </a>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <h2><b> Arkademy Bootcamp</b></h2>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#add">ADD</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <table class="table table-borderless text-center table-set shadow-sm">
+            <thead class="bg-secondary">
+                <tr>
+                    
+                    <th class="text-white p-4" scope="col">Name</th>
+                    <th class="text-white p-4" scope="col">Work</th>
+                    <th class="text-white p-4" scope="col">Salary</th>
+                    <th class="text-white p-4" cope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    
+                    <td>Bintang</td>
+                    <td>Backend Dev</td>
+                    <td>Rp.12.000.000</td>
+                    <td>
+                        
+                        <button type="button" class="btn text-danger" data-toggle="modal" data-target="#delete"><img src="img/bin1.png" width="20" height="20"></button>
+                        <button type="button" class="btn text-success" data-toggle="modal" data-target="#edit"><img src="img/edit1.png" width="20" height="20"></button>
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td>Tasya</td>
+                    <td>Backend Dev</td>
+                    <td>Rp.12.000.000</td>
+                    <td>
+                       
+                        <button type="button" class="btn text-danger" data-toggle="modal"
+                            data-target="#delete"><img src="img/bin1.png" width="20" height="20"></button>
+                             <button type="button" class="btn text-success" data-toggle="modal"
+                            data-target="#edit"><img src="img/edit1.png" width="20" height="20"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Poetra</td>
+                    <td>Backend Dev</td>
+                    <td>Rp.12.000.000</td>
+                    <td>
+                       
+                        <button type="button" class="btn text-danger" data-toggle="modal"
+                            data-target="#delete"><img src="img/bin1.png" width="20" height="20"></button>
+                             <button type="button" class="btn text-success" data-toggle="modal"
+                            data-target="#edit"><img src="img/edit1.png" width="20" height="20"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Joko</td>
+                    <td>Frontend Dev</td>
+                    <td>Rp.10.000.000</td>
+                    <td>
+                        
+                        <button type="button" class="btn text-danger" data-toggle="modal"
+                            data-target="#delete"><img src="img/bin1.png" width="20" height="20"></button>
+                            <button type="button" class="btn text-success" data-toggle="modal"
+                            data-target="#edit"><img src="img/edit1.png" width="20" height="20"></button>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Add Modal -->
+    <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content border-radius">
+                <div class="modal-header no-border">
+                    <h5 class="modal-title" id="exampleModalLabel" ">ADD DATA</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body no-border">
+                    <div class="container">
+                        <form>
+                               <div class="form-group">
+                                <label for="formGroupExampleInput2"></label>
+                                <input type="text" class="form-control" id="inputPrice" placeholder="Nama">
+                            </div>
+                            <div class="form-group">
+                                <label></label>
+                                <select class="form-control" id="inputProduct">
+                                    <option>Frontend Dev</option>
+                                    <option>Backend Dev</option>
+                                  
+                                   
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput"></label>
+                                <select class="form-control" id="inputCategory" >
+                                <option>Rp.10.000.000</option>
+                                    <option>Rp.20.000.000</option>
+                                </select>
+                            </div>
+                         
+                            <div class="modal-footer no-border">
+                                <button type="button" class="btn btn-dark">ADD</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content border-radius">
+                <div class="modal-header no-border">
+                    <h5 class="modal-title" id="exampleModalLabel">EDIT</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body no-border">
+                    <div class="container">
+                        <form>
+                               <div class="form-group">
+                                <label for="formGroupExampleInput2"></label>
+                                <input type="text" class="form-control" id="inputPrice" placeholder="Nama">
+                            </div>
+                            <div class="form-group">
+                                <label></label>
+                                <select class="form-control" id="inputProduct">
+                                    <option>Frontend Dev</option>
+                                    <option>Backend Dev</option>
+                                  
+                                   
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput"></label>
+                                <select class="form-control" id="inputCategory" >
+                                <option>Rp.10.000.000</option>
+                                    <option>Rp.20.000.000</option>
+                                </select>
+                            </div>
+                         
+                            <div class="modal-footer no-border">
+                                <button type="button" class="btn btn-dark">ADD</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Modal -->
+    <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content border-radius">
+                <div class="modal-header no-border">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body no-border">
+                    <div class="container text-center">
+                        
+                        <img class="m-2" src="img/checked-1.png" width="300" height="300">
+                        <H4>Data telah Berhasil Dihapus!</H4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

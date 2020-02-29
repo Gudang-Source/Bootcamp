@@ -1,0 +1,49 @@
+a:not([href]):not([tabindex]) {
+    color: hotpink;
+}
+
+.btn-dark {
+    background-color: hotpink;
+    border-color: hotpink;
+    background: #FADC9C;
+}
+
+.text-pink {
+    color: hotpink;
+}
+
+.table-set {
+    /* border: 1em; */
+    /* border-collapse: collapse; */
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.border-radius {
+    /* border: 1em; */
+    /* border-collapse: collapse; */
+    border-radius: 1em;
+    
+}
+
+.form-control {
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+
+.rectangle{
+position: absolute;
+width: 856px;
+height: 43px;
+left: 300px;
+top: 15px;
+
+background: #CECECE;
+border-radius: 10px;
+}
+
+.no-border {
+    border-radius: 0;
+    border: 1px;
+}

@@ -1,0 +1,32 @@
+panduan singkat instalasi eRaporSMK2018 V4.1.0
+A. Istaslasi
+1. Belum pernah menggunakan eRaporSMK silahkan download aplikasi dan install aplikasi
+
+2. Menggunakan eRaporSMK di bawah versi 4.0 silahkan download aplikasi dan install aplikasi dari awal
+	- uninstall aplikasi eRapor yang lama
+	- restart
+	- pastikan folder eRaporSMK di drive c hilang (jika masih ada hapus)
+	- install aplikasi yang baru
+
+3. Menggunakan aplikasi eRapor 4.0 - 4.0.8 silahkan update sampai versi 4.1.0 dengan catatan backup dulu database nya 	
+cara membackup 
+copy kan ke tempat/lokasi lain folder database yang ada di dalam folder eRaporSMK2018 (posisi default folder database C:\eRaporSMK2018)
+
+B. Catatan
+1. Agar semua proses berjalan lancar pastikan semua menu di login admin sudah dilakukan (maping pembelajaran, teknik penilaian
+2. jika belum melakukan maping kelompuk dan urutan maka skm tidak akan muncul (tetapi muncul 0)
+3. penilaian karakter wajib mengisi Catatan Perkembangan Karakter dan yang lainnya menyesuaikan
+4. untuk pengguna windows server
+
+	- buka services.msc
+
+	- cari eRaporDB
+	- klik kanan
+
+	- pilih Log On
+
+	- pilih Local System account (hilangakn ceklist pada Allow service ...)
+
+	- klik ok
+
+	- star service eRaporDB
